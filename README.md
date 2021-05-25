@@ -12,7 +12,7 @@ My 2021 freeCodeCamp campaign and tracking all the work on GitHub
 
 |          Github Project Links           |                             CodePen Project Links                              | Date Completed on |
 | :-------------------------------------: | :----------------------------------------------------------------------------: | :---------------: |
-|     [Build a Tribute Page GitHub]()     | [Build a Tribute Page CodePen](https://codepen.io/IAmAlexJohnson/full/dyvRWmR) |                   |
+|     [Build a Tribute Page GitHub]()     | [Build a Tribute Page CodePen](https://codepen.io/IAmAlexJohnson/full/dyvRWmR) |  May 25th, 2021   |
 |         [Survey Form GitHub]()          |                            [Survey Form CodePen]()                             |                   |
 |     [Product Landing Page GitHub]()     |                        [Product Landing Page CodePen]()                        |                   |
 | [Technical Documentation Page GitHub]() |                    [Technical Documentation Page CodePen]()                    |                   |
