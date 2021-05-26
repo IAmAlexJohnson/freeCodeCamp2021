@@ -4,9 +4,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp: Survey Form</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Teko:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <main id="main">
+        
+
+        <div class="survey-container">
+            <form class="form" action="" id= "survey-form">
+                <div class="form__description">
+                    <h1 id="title">freeCodeCamp Survey</h1>
+                    <p id="description">This mini survey is for freeCodeCamp's Responsive Web Design certificate. If you run the Test Suite and all the tests do not pass fill out the form and run again.</p>
+                </div>
+
+                <div class="form__personal">
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="First name" id="name" required>
+                        <label id="name-label" for="name" class="form__label">Full name</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="number" class="form__input" placeholder="Age" id="number" required min="0" max="99">
+                        <label id="number-label" for="number" class="form__label" id="number-label">Age</label>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__radio-group">
+                          <input type="radio" class="form__radio-input" value="female" name="gender" id="female" required>
+                          <label for="female" class="form__radio-label">
+                            Female
+                          </label>
+                        </div>
+          
+                        <div class="form__radio-group">
+                          <input type="radio" class="form__radio-input" value="male" name="gender" id="male" required>
+                          <label for="male" class="form__radio-label">
+                            Male
+                          </label>
+                        </div>
+          
+                        <div class="form__radio-group">
+                          <input type="radio" class="form__radio-input" value="other" name="gender" id="other" required>
+                          <label for="other" class="form__radio-label">
+                            Other
+                          </label>
+                        </div>
+          
+                        <div class="form__radio-group">
+                          <input type="radio" class="form__radio-input" value="other" name="gender" id="not-say" required checked>
+                          <label for="not-say" class="form__radio-label">
+                            Rather not say
+                          </label>
+                        </div>
+                      </div>
+
+                </div>
+
+               <div class="form__contact">
+                <div class="form__group">
+                    <input type="tel" class="form__input" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone Number" required>
+                    <label for="number" class="form__label" id="phone-label">Phone Number</label>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                    <label id="email-label" for="email" class="form__label" id="email-label">Email address</label>
+                </div>
+
+                <div class="form__questions">
+                    <div class="form__group ">
+                        <label for="dropdown" class="form__label">How would you rate your coding skills?</label>
+                        <select id="dropdown" name="affiliates" class="form__input">
+                          <option value="" disabled selected>Select your option</option>
+                          <option value="just-starting">Just starting!</option>
+                          <option value="beginner">Beginner</option>
+                          <option value="intermediate">Intermediate</option>
+                          <option value="advanced">Advanced</option>
+                          <option value="master">I am a master!</option>
+                        </select>
+                      </div>
+                      <div class="form__group">
+
+                        <p class="form__checkbox--description">
+                          What coding languages are you learning:
+                        </p>
+          
+                        <div class="form__checkbox-group">
+          
+                          
+                        <div class="form__checkbox-group">
+          
+                            <div class="row clear-fix">
+                                <div class="col-1-of-2">
+                                    <input type="checkbox" id="language1" name="language1" value="JavaScript">
+                                    <label for="language1">JavaScript </label>
+                                    <br>
+                                    <input type="checkbox" id="language2" name="language2" value="Python">
+                                    <label for="language2"> Python</label>
+                                    <br>
+                                    <input type="checkbox" id="language3" name="language3" value="Other">
+                                    <label for="language3"> Other</label>
+                                </div>
+
+                                <div class="col-1-of-2">
+                                    <input type="checkbox" id="language4" name="language4" value="Java">
+                                    <label for="language4"> Java</label>
+                                    <br>
+                                    <input type="checkbox" id="language9" name="language9" value="PHP">
+                                    <label for="language9"> PHP</label>
+                                    <br>
+                                    <input type="checkbox" id="language10" name="language10" value="Ruby">
+                                    <label for="language10"> Ruby</label>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="form__group">
+                        <label for="comments" class="form__label">Any comments or suggestions?</label>
+                        <textarea name="comments" id="comments"></textarea>
+                      </div>
+
+                </div>
+
+                <div class="form__group--btn">
+                    <button id="submit" class="btn btn--yellow">Finish</button>
+                    <button class="btn btn--cancel">Cancel</button>
+                </div>
+               </div>
+                
+    
+            </form>
+            <div class="img-container">
+                <img id="form__img" src="imgs/yellow-numbers.jfif" alt="Yellow wall with big black numbers on it.">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <span>Coded and Designed by <a target="_blank" href="https://twitter.com/IAmAlex_Johnson">Alex Johnson.</a></span>
+    </footer>
     
 </body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
