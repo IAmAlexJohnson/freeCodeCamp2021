@@ -1,3 +1,4 @@
+/* ============== VARIABLES ============= */
 $intro-blue: hsl(217, 28%, 15%);
 $main-background: hsl(218, 28%, 13%);
 $footer-background: hsl(216, 53%, 9%);
@@ -10,9 +11,7 @@ $blue: hsl(198, 60%, 50%);
 $light-red: hsl(0, 100%, 63%);
 $white: hsl(0, 0%, 100%);
 
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Raleway', sans-serif;
-
+/* ============== GLOBAL ============= */
 *,
 *::after,
 *::before {
@@ -21,11 +20,108 @@ $white: hsl(0, 0%, 100%);
   box-sizing: border-box;
 }
 
-body {
-  background-color: $main-background;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
   color: $white;
 }
 
+body {
+  font-size: 14px;
+  background-color: $main-background;
+  color: $white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  padding: 0 1.9em;
+}
+/* ============== BUTTONS ============= */
+button {
+  background: $blue;
+  background-image: linear-gradient(to right, $cyan, $blue);
+  color: $white;
+  border: none;
+  width: 17em;
+  height: 3.4em;
+  border-radius: 3.571em;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* ============== HEADER ============= */
+
+header {
+  height: 90vh;
+  background-image: linear-gradient($intro-blue, $main-background);
+}
+#header-section {
+  text-align: center;
+  line-height: 1.5;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  //TODO Center background image properly
+}
+.header--text-container .lead {
+  padding: 0 1em;
+}
+.secondary-heading {
+  font-size: 1.8em;
+}
+#hero-image {
+  min-width: 20em;
+  width: 100%;
+  // TODO look into responsive images
+}
+
+/* ============== NAVBAR ============= */
+#fylo-logo {
+  height: 1.7857em; //25px
+}
+
+nav {
+  padding: 1.8em;
+  height: 1.7857em; //25px
+  line-height: 2;
+
+  & ul {
+    float: right;
+    list-style: none;
+
+    & li {
+      float: left;
+      margin-left: 1.2em;
+    }
+  }
+}
+
+/* ============== UTILITIES ============= */
+.visuallyhidden {
+  display: none;
+}
+.u-margin-top-sm {
+  margin-top: 1.42857em; //20px
+}
+.u-margin-top-md {
+  margin-top: 2.5em; //35px
+}
+.u-margin-top-lg {
+  margin-top: 3.571em; //50px
+}
+
+/* ============== FOOTER ============= */
 .attribution {
   font-size: 11px;
   text-align: center;

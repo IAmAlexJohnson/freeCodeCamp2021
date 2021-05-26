@@ -1,3 +1,5 @@
+/* ============== VARIABLES ============= */
+/* ============== GLOBAL ============= */
 *,
 *::after,
 *::before {
@@ -5,10 +7,92 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  background-color: #181f2a;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: "Raleway", sans-serif; }
+
+a {
+  text-decoration: none;
   color: white; }
 
+body {
+  font-size: 14px;
+  background-color: #181f2a;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+section {
+  padding: 0 1.9em; }
+
+/* ============== BUTTONS ============= */
+button {
+  background: #339ecc;
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  color: white;
+  border: none;
+  width: 17em;
+  height: 3.4em;
+  border-radius: 3.571em;
+  font-weight: 700;
+  font-size: 1.1em; }
+
+/* ============== HEADER ============= */
+header {
+  height: 90vh;
+  background-image: linear-gradient(#1c2431, #181f2a); }
+
+#header-section {
+  text-align: center;
+  line-height: 1.5;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.header--text-container .lead {
+  padding: 0 1em; }
+
+.secondary-heading {
+  font-size: 1.8em; }
+
+#hero-image {
+  min-width: 20em;
+  width: 100%; }
+
+/* ============== NAVBAR ============= */
+#fylo-logo {
+  height: 1.7857em; }
+
+nav {
+  padding: 1.8em;
+  height: 1.7857em;
+  line-height: 2; }
+  nav ul {
+    float: right;
+    list-style: none; }
+    nav ul li {
+      float: left;
+      margin-left: 1.2em; }
+
+/* ============== UTILITIES ============= */
+.visuallyhidden {
+  display: none; }
+
+.u-margin-top-sm {
+  margin-top: 1.42857em; }
+
+.u-margin-top-md {
+  margin-top: 2.5em; }
+
+.u-margin-top-lg {
+  margin-top: 3.571em; }
+
+/* ============== FOOTER ============= */
 .attribution {
   font-size: 11px;
   text-align: center; }
