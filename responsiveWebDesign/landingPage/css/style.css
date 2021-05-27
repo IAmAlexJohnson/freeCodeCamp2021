@@ -37,7 +37,7 @@ button {
   color: white;
   border: none;
   width: 17em;
-  height: 3.4em;
+  height: 2.5em;
   border-radius: 3.571em;
   font-weight: 700;
   font-size: 1.1em; }
@@ -79,9 +79,72 @@ nav {
       float: left;
       margin-left: 1.2em; }
 
+/* ============== FEATURES ============= */
+#features {
+  text-align: center; }
+
+.feature--image {
+  max-height: 4.2857em;
+  max-width: 5em; }
+
+.feature--container {
+  line-height: 1.5; }
+
+/* ============== HOWITWORKS============= */
+#how-it-works img {
+  min-width: 19em;
+  width: 100%; }
+
+.how-it-works--link {
+  color: #65e2d9;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #65e2d9; }
+
+/* ============== TESTIMONIAL ============= */
+.testimonial-container {
+  background-color: #202a3c;
+  padding: 2em;
+  border-radius: 5px;
+  line-height: 1.5; }
+
+.testimonial--image {
+  border-radius: 50%;
+  width: 5em;
+  float: left; }
+
+/* ============== SIGNUP ============= */
+.signup--container {
+  background-color: #1c2431;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  text-align: center; }
+
+#signup--email {
+  border: none;
+  width: 100%;
+  height: 2.5em;
+  border-radius: 3.571em;
+  font-size: 0.8em;
+  padding: 2em; }
+
+input[type="email"] {
+  color: red; }
+
+/* ============== FOOTER ============= */
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
 /* ============== UTILITIES ============= */
 .visuallyhidden {
   display: none; }
+
+.u-margin-top-xs {
+  margin-top: 1em; }
 
 .u-margin-top-sm {
   margin-top: 1.42857em; }
@@ -92,10 +155,8 @@ nav {
 .u-margin-top-lg {
   margin-top: 3.571em; }
 
-/* ============== FOOTER ============= */
-.attribution {
-  font-size: 11px;
-  text-align: center; }
+.u-margin-top-xl {
+  margin-top: 5em; }
 
-.attribution a {
-  color: #3e52a3; }
+.u-margin-top-section {
+  margin-top: 8.571em; }
