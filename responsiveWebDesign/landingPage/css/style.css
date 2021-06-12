@@ -37,7 +37,7 @@ button {
   color: white;
   border: none;
   width: 17em;
-  height: 2.5em;
+  height: 3em;
   border-radius: 3.571em;
   font-weight: 700;
   font-size: 1.1em; }
@@ -59,6 +59,9 @@ header {
 
 .secondary-heading {
   font-size: 1.8em; }
+
+.tertiary-heading {
+  font-size: 1.3em; }
 
 #hero-image {
   min-width: 20em;
@@ -101,16 +104,31 @@ nav {
   border-bottom: 1px solid #65e2d9; }
 
 /* ============== TESTIMONIAL ============= */
+#testimonials {
+  position: relative; }
+
+#testimonial-quotation {
+  width: 1.5em;
+  position: absolute;
+  top: -1.3em; }
+
 .testimonial-container {
   background-color: #202a3c;
   padding: 2em;
   border-radius: 5px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin: 0 auto; }
 
 .testimonial--image {
   border-radius: 50%;
-  width: 5em;
-  float: left; }
+  width: 5em; }
+
+.testimonial--user-container .row {
+  display: flex;
+  align-items: center; }
+
+.testimonial-person {
+  margin-left: 1em; }
 
 /* ============== SIGNUP ============= */
 .signup--container {
@@ -131,15 +149,68 @@ nav {
 input[type="email"] {
   color: red; }
 
+#signup-label {
+  display: none; }
+
 /* ============== FOOTER ============= */
+footer {
+  padding: 0 1.9em;
+  position: relative; }
+
+.contact--item {
+  position: relative; }
+
+.contact--item::after {
+  margin-bottom: 2em; }
+
+.contact--item:nth-child(2n) {
+  top: 3em; }
+
+.contact--item:nth-child(3n) {
+  top: 3em; }
+
+.contact-icon {
+  margin-right: 1em; }
+
+.contact {
+  display: block;
+  position: absolute;
+  left: 3em;
+  top: 0; }
+
+#footer-nav {
+  margin: 5em 0;
+  position: relative;
+  right: 3em; }
+
+.footer-link {
+  font-size: 1.2em; }
+
+.footer-links:nth-child(2) {
+  margin-top: 2em; }
+
+.social-media-container {
+  display: block;
+  width: 100%;
+  height: 3em;
+  text-align: center; }
+
 .attribution {
   font-size: 11px;
-  text-align: center; }
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  padding: 5em 0; }
 
 .attribution a {
   color: #3e52a3; }
 
 /* ============== UTILITIES ============= */
+.right-arrow-icon {
+  height: 1em;
+  width: 100%; }
+
 .visuallyhidden {
   display: none; }
 
@@ -160,3 +231,37 @@ input[type="email"] {
 
 .u-margin-top-section {
   margin-top: 8.571em; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-left-float {
+  float: left; }
+
+.u-right-float {
+  float: right; }
+
+/* ============== GRID ============ */
+.clear-fix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-1-of-2 {
+  width: calc((100% - 3.75em) / 2); }
+
+/* ============== MEDIA QUERIES============ */
+@media only screen and (min-width: 102.857em) {
+  /* 1440 */
+  .row {
+    max-width: 90em;
+    margin: 0 auto;
+    display: flex; }
+  .col-1-of-2 {
+    width: calc((100% - 3.75em) / 2); }
+  .col-1-of-3 {
+    width: calc((100% - 2 * 3.75em) / 3); }
+  [class^="col-"] {
+    float: left; }
+  [class^="col-"]:not(:last-child) {
+    margin-right: 3.75em; } }

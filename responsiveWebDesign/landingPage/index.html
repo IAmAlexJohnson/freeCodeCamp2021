@@ -14,7 +14,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     
-  </style>
+  </style> 
 </head>
 <body>
 
@@ -101,13 +101,15 @@
     attachments required.</p>
 
   <div class="u-margin-top-sm">
-    <a href="#" class="how-it-works--link">See how Fylo works</a> 
+    <a href="#" class="how-it-works--link">See how Fylo works
+      <img src="images/icon-arrow.svg" alt="right arrow" class="right-arrow-icon">
+    </a> 
   </div>
 
 </section>
 
 <section id="testimonials" class="u-margin-top-section">
-  <img src="images/bg-quotes.png" alt="opening quotation mark">
+  <img id="testimonial-quotation" src="images/bg-quotes.png" alt="opening quotation mark">
   <div class="row">
 
     <div class="testimonial-container u-margin-top-md">
@@ -116,12 +118,12 @@
 
       <div class="testimonial--user-container">
 
-        <div class="row">
+        <div class="row clear-fix u-margin-top-md">
 
-          <div class="col-1-of-2">
+          <div class="u-left-float testimonial-image">
             <img src="images/profile-1.jpg" class="testimonial--image" alt="image of satish patel.">
           </div>
-          <div class="col-1-of-2">
+          <div class="u-right-float testimonial-person">
             <h4 class="testimonial--name">Satish Patel</h4>
             <p class="testimonial--occupation">Founder & CEO, Huddle</p>
           </div>
@@ -135,12 +137,12 @@
 
       <div class="testimonial--user-container">
 
-        <div class="row">
+        <div class="row clear-fix u-margin-top-md">
 
-          <div class="col-1-of-2">
+          <div class="u-left-float testimonial-image">
             <img src="images/profile-2.jpg" class="testimonial--image" alt="image of satish patel.">
           </div>
-          <div class="col-1-of-2">
+          <div class="u-right-float testimonial-person">
             <h4 class="testimonial--name">Bruce McKenzie</h4>
             <p class="testimonial--occupation">Founder & CEO, Huddle</p>
           </div>
@@ -154,12 +156,12 @@
 
       <div class="testimonial--user-container">
 
-        <div class="row">
+        <div class="row clear-fix u-margin-top-md">
 
-          <div class="col-1-of-2">
+          <div class="u-left-float testimonial-image">
             <img src="images/profile-3.jpg" class="testimonial--image" alt="image of satish patel.">
           </div>
-          <div class="col-1-of-2">
+          <div class="u-right-float testimonial-person">
             <h4 class="testimonial--name">Iva Boyd</h4>
             <p class="testimonial--occupation">Founder & CEO, Huddle</p>
           </div>
@@ -180,30 +182,31 @@
 
   <div class="form-group u-margin-top-sm">
     <input type="email" class="form-input" placeholder="email@email.com" id="signup--email" name="email" required>
-    <label for="signup--email">email</label>
+    <label for="signup--email" id="signup-label">email</label>
     <button class="btn u-margin-top-sm">Get Started For Free</button>
   </div>
   </div>
 </section>
 
-  <footer class="u-margin-top-section">
+  <footer class="u-margin-top-section" id="fylo-footer-logo">
     <img src="images/logo.svg" alt="Fylo logo">
    
-    <div class="row">
+    <div class="row u-margin-top-md">
+
       <div class="contact--container">
-        <div class="contact--item">
-          <img src="images/icon-location.svg" alt="location arrow icon">
+        <div class="contact--item clear-fix">
+          <img src="images/icon-location.svg" alt="location arrow icon" class="contact-icon">
           <span class="contact contact--location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
           dolore magna aliqua</span>
         </div>
       
-        <div class="contact--item">
-          <img src="images/icon-phone.svg" alt="phone icon">
+        <div class="contact--item clear-fix">
+          <img src="images/icon-phone.svg" alt="phone icon" class="contact-icon">
           <span class="contact contact--number">+1-543-123-4567</span>
         </div>
 
-        <div class="contact--item">
-          <img src="images/icon-email.svg" alt="email icon">
+        <div class="contact--item clear-fix">
+          <img src="images/icon-email.svg" alt="email icon" class="contact-icon">
           <span class="contact contact--email">example@fylo.com</span>
         </div>
       </div>
@@ -211,15 +214,15 @@
 
     <nav id="footer-nav">
       <ul>
-        <div class="row">
-          <div class="col-1-of-2">
+       <div class="row">
+          <div class="col-1-of-2 footer-links clear-fix">
             <li class="footer-link"><a href="#">About Us</a></li>
             <li class="footer-link"><a href="#">Jobs</a></li>
             <li class="footer-link"><a href="#">Press</a></li>
             <li class="footer-link"><a href="#">Blog</a></li>
           </div>
 
-          <div class="col-1-of-2">
+          <div class="col-1-of-2 footer-links clear-fix">
             <li class="footer-link"><a href="#">Contact Us</a></li>
             <li class="footer-link"><a href="#">Terms</a></li>
             <li class="footer-link"><a href="#">Privacy</a></li>
@@ -229,10 +232,12 @@
       </ul>
     </nav>
 
-    <div class="social-media--container">
-
-    </div>
     
+    <div class="social-media--container">
+      <img src="" alt="facebook icon">
+      <img src="" alt="twitter icon">
+      <img src="" alt="instagram icon">
+    </div>
   
     <div class="attribution">
       <p>Challenge by <a target="_blank" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
