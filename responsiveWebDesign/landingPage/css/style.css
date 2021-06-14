@@ -278,8 +278,21 @@ footer i.fa-facebook-f {
   width: calc((100% - 3.75em) / 2); }
 
 /* ============== MEDIA QUERIES============ */
-@media only screen and (min-width: 102.857em) {
+@media only screen and (min-width: 90em) {
   /* 1440 */
+  #fylo-logo {
+    height: 3.125em; }
+  /* ============== HEADER ============= */
+  #header-section {
+    background-image: url("../images/bg-curvy-desktop.svg"); }
+  #hero-image,
+  #hero-image--container,
+  .header--text-container {
+    max-width: 35em;
+    margin-left: auto;
+    margin-right: auto; }
+  /* ============== FEATURES ============= */
+  /* ============== UTILITIES ============ */
   .row {
     max-width: 90em;
     margin: 0 auto;
